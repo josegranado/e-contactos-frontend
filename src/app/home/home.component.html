@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="row">
+		<button [routerLink]="['/agenda/add']" class="btn btn-primary col-5 col-md-3 col-lg-3 d-flex align-items-center justify-content-center" style="height:200px; color:#FFF;border-radius:50%;margin:20px">
+			<i class="fa fa-plus" style="font-size:50px" aria-hidden="true"></i>
+		</button>
+		<div  *ngFor="let agenda of agendas"class="col-5 col-md-3 col-lg-3" style="height:200px;background:#3a4a48; color:#FFF; margin:20px; text-align:center;padding:20px;border-radius:10px">
+			<i style="font-size:50px" class="fa fa-address-book-o" aria-hidden="true"></i>
+			<h4>{{agenda.nombre}}</h4>
+			<br>
+			<div class="row" style="bottom:0">
+				<div class="col-12">
+					<button [routerLink]="['agenda', agenda.id ]" class="btn btn-primary" style="margin-right:5px"><i class="fa fa-search" aria-hidden="true"></i></button>
+					 <button [routerLink]="[ 'agenda', agenda.id, 'edit' ]" class="btn btn-warning" style="margin-right:5px">
+					    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+					</button> 
+					<button (click)="borrar(agenda.id)"class="btn btn-danger">
+					     <i class="fa fa-times" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

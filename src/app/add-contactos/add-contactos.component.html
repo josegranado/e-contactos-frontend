@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+  	<div class="col-10" style="margin:auto">
+  		<h1 style="text-align:center; margin: 10px auto">Guardar contacto</h1>
+  <div class="form-group">
+    <input [(ngModel)]="contacto.nombre" type="text" class="form-control"placeholder="Nombre del contacto">
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="contacto.apellido" type="text" class="form-control" placeholder="Apellido del contacto">
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="contacto.email" type="email" class="form-control" placeholder="Email del contacto">
+  </div>
+   <div class="form-group">
+    <input [(ngModel)]="contacto.numero_celular" type="text" class="form-control"  placeholder="Numero del celular">
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="contacto.numero_trabajo" type="text" class="form-control"  placeholder="Numero del trabajo">
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="contacto.direccion" type="text" class="form-control"  placeholder="Direccion del contacto">
+  </div>
+  <div class="form-group">
+      <button (click)="save()" id="order-button" style="width:100%" type="button" class="btn btn-success">Guardar</button>
+  </div>
+  	</div>
+  </div>
+</div>

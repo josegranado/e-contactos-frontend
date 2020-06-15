@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="row">
+		<div class="col-12 mt-1">
+			<button (click)='regresar()' class="btn btn-primary" style="marigin: 5px">Regresar </button>
+		</div>
+		<div class="col-12 mt-1">
+			<div class="card" style="width: 100%;">
+			  <img style="width:40%;margin:auto" class="card-img-top" src="https://cdn3.iconfinder.com/data/icons/social-messaging-productivity-6/128/profile-circle2-512.png" alt="Card image cap">
+			  <div class="card-body text-center" >
+			    <h5 class="card-title">{{ contacto?.nombre + ' ' + contacto?.apellido }}</h5>
+			    <p class="card-text"><b>Numero de telefono movil: </b> {{ contacto?.numero_celular }}</p>
+			    <p class="card-text"><b>Numero de telefono movil: </b> {{  contacto?.numero_trabajo }}</p>
+			    <p class="card-text"><b>Direccion: </b> {{  contacto?.direccion }}</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
